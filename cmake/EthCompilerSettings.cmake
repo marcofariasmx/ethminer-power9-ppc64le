@@ -20,7 +20,7 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
     eth_add_cxx_linker_flag_if_supported(-Wl,--gc-sections)
 
 	if ("${CMAKE_SYSTEM_NAME}" MATCHES "Linux")
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libstdc++ -fcolor-diagnostics -Qunused-arguments")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fcolor-diagnostics -Qunused-arguments")
 	endif()
 
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")

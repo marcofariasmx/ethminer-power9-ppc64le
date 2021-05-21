@@ -1,0 +1,8 @@
+hunter_config(CURL VERSION ${HUNTER_CURL_VERSION} CMAKE_ARGS HTTP_ONLY=ON CMAKE_USE_OPENSSL=OFF CMAKE_USE_LIBSSH2=OFF CURL_CA_PATH=none)
+hunter_config(Boost VERSION 1.69.0)
+hunter_config(
+    Boost
+    VERSION 1.69.0_new_url
+    SHA1 25fca5b6b3ce70b682ecd2c1b9eae04fb90bdafd
+    URL https://boostorg.jfrog.io/artifactory/main/release/1.69.0/source/boost_1_69_0.tar.gz
+)
